@@ -14,13 +14,13 @@ public class Main {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-            login = input.nextLine();
-            password = input.nextLine();
-            confirmPassword = input.nextLine();
+        login = input.nextLine();
+        password = input.nextLine();
+        confirmPassword = input.nextLine();
         try{
             inputBox(login, password, confirmPassword);
         } catch (WrongLoginException e) {
-           e.printStackTrace();
+            e.printStackTrace();
         } catch (WrongPasswordException e) {
             e.printStackTrace();
         } finally {
@@ -40,3 +40,5 @@ public class Main {
         }
     }
 }
+
+
